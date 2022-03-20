@@ -1,0 +1,158 @@
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/banner.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner h1{
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(32, 124, 20);
+    text-shadow: 2px 2px 4px #000000;
+}
+.menu-title{
+    margin: 0 auto;
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.menu-title h1{
+    text-align: center;
+    padding: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(223, 109, 23);
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.menu-title h1:visited {
+    color: rgb(223, 109, 23);
+}
+.menu-title h1:hover {
+    color: rgba(6, 114, 255, 0.885);
+}
+.menu-title h1:active {
+    color: rgb(223, 109, 23);
+}
+
+.menu{
+    margin: 0 auto;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.meal{
+    margin: 20px 35px;
+    width: 275px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.breakfast{
+    background-image: url("../img/menu/Breakfast/1.jpeg");
+}
+.dinner{
+    background-image: url("../img/menu/Dinner/10.jpeg");
+}
+.lunch{
+    background-image: url("../img/menu/Lunch/5.jpeg");
+}
+.drinks{
+    background-image: url("../img/menu/Drinks/15.jpeg");
+}
+.meal div{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.meal a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.meal div:hover{
+    opacity: 0.8;
+    transition: all ease-in-out 100ms;
+}
+
+.AboutUs-title{
+    margin: 30px auto 10px;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.AboutUs-title h1{
+    text-align: center;
+    padding: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(223, 109, 23);
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.about-us{
+    margin: 30px auto;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+#aboutUs-p p{
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: justify;
+    text-indent: 70px;
+    font-size: 40px;
+    line-height: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.mealPrep-img{
+    width: 100%;
+    height: 400px;
+    background-image: url("/img/about_us.jpeg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media only screen and (min-width: 1000px){
+    .about-us{
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mealPrep-img{
+        margin-left: 2%;
+        width: 48%;
+        min-height: 300px;
+    }
+    #aboutUs-p{
+        width: 50%;
+    }
+}
